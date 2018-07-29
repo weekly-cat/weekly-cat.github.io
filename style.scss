@@ -1,0 +1,138 @@
+---
+---
+
+$yellow: yellow;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+  font-family: sans-serif;
+  position: relative;
+
+  background: #dedede;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.site-title {
+  position: fixed;
+  float: left;
+  font-size: 62px;
+  font-weight: 300;
+  left: -.1em;
+  top: -1.15em;
+  color: #aaa;
+}
+
+.wrapper {
+  max-width: 75%;
+  margin: auto;
+  clear: both;
+  background: #000;
+  color: #fff;
+}
+
+main {
+    .bg-highlight {
+      background: #fff;
+      color: #343434;
+      padding: 5px;
+    }
+
+    h1 {
+    font-weight: 300;
+
+    &:before, &:after {
+      content: '';
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      background: url('/assets/images/eye.jpg') no-repeat no-repeat center center;
+      background-size: cover;
+    }
+
+    &:after {
+      transform: scaleX(-1);
+      filter: FlipH;
+    }
+  }
+
+  .slogan {
+    padding-bottom: 20px;
+  }
+
+}
+
+.subscribe {
+  padding: 20px 0 40px;
+  background: rgba(255,255,255,0.2);
+
+  h2 {
+    color: #aaa;
+    font-size: 1em;
+    font-weight: 300;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  input {
+    outline: none;
+    border: none;
+    padding: .5em;
+    font-size: 1.25em;
+    font-weight: 300;
+
+    &::placeholder {
+      color: #aaa;
+    }
+
+    &[type="email"] {
+      color: #343434;
+    }
+    &[type="submit"] {
+      background: #000;
+      color: #fff;
+      font-weight: 300;
+
+      &:hover { cursor: pointer; }
+    }
+  }
+}
+
+nav {
+  padding: 5px;
+  width: 100%;
+  text-align: right;
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      margin-right: .5em;
+
+      a {
+        display: block;
+        padding: .5em 1em;
+
+        &:hover {
+          transition-duration: .2s;
+        }
+      }
+    }
+  }
+}
