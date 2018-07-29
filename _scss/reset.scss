@@ -1,0 +1,18 @@
+
+::selection {
+  color: #000;
+  background: yellow;
+}
+::-moz-selection {
+  color: #000;
+  background: yellow;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input, textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
